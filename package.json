@@ -1,0 +1,40 @@
+{
+  "name": "react-webcomp",
+  "version": "1.0.0",
+  "description": "ReactJS Web Component",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "@djidja8",
+    "email": "srdjan@timok.com",
+    "url": "https://github.com/https://github.com/Srdjan"
+  },
+  "dependencies": {
+    "react": "^0.12.2"
+  },
+  "devDependencies": {
+    "6to5ify": "^3.1.2"
+  },
+  "scripts": {
+    "build": "browserify --dg ./index.js -o ./bundle.js",
+    "test": "6to5-node.cmd test.js"
+  },
+  "keywords": [
+    "reactjs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/https://github.com/Srdjan/react-webcomp.git"
+  },
+  "homepage": "https://github.com/https://github.com/Srdjan/react-multistep",
+  "bugs": {
+    "url": "https://github.com/https://github.com/Srdjan/react-multistep/issues"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "6to5ify"
+      ]
+    ]
+  }
+}
