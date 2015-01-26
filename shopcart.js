@@ -1,7 +1,7 @@
 //todo: embed styles
-//todo: allow external style chanes (position?)
+//todo: allow external style changes (position?)
 const React = require('react')
-// const registerReact = require('./reactive-elements')
+const registerReact = require('./reactive-elements')
 
 function updateStyles() {
   [].slice.call(document.querySelectorAll('.checkout')).forEach(function(el) {
@@ -53,4 +53,5 @@ let ShopCart = React.createClass({
   )}
 })
 
-React.render(<ShopCart/>, document.getElementById('shopcart'))
+document.registerReact('react-shopcart', ShopCart)
+// React.render(<ShopCart/>, document.getElementById('shopcart'))
