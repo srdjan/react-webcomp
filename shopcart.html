@@ -7,7 +7,9 @@
   <meta name="author" content="@djidja8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <!-- <link rel="stylesheet" href="./css/style.css"></link> -->
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css/checkout.css"/>
+
   <script src="./lib/webcomponents-lite.js"></script>
   <script>
       var config = {
@@ -23,19 +25,18 @@
 </head>
 
 <body>
-  <h4>React.js and Web Components... using:</h4>
+  <h4>Shopping Cart with React.js and Web Components</h4>
   <ul>
    <li><a href="http://pixelscommander.com/en/interactive-revolution/web-components-and-react-js-with-reactiveelements/">Reactive Elements</a> by @pixelscomander</li>
    <li><a href="http://webcomponents.org/polyfills/">Web Components polyfill</a></li>
    <li>and UI ideas from <a href="http://tympanus.net/codrops/2015/01/22/ideas-checkout-effects/">@codedrops</a></li>
   </ul>
 
-  <!-- ract component wrapped in standard web component: -->
-  <react-webcomp config="{config}">List of Birds:</react-webcomp>
-  <!-- vs -->
-  <!-- <div id="react-webcomp"></div> -->
-  <!-- but with no way to pass params in? -->
+  <!-- react comp -->
+  <div id="shopcart"></div>
 
+  <!-- /react comp -->
   <script src="./bundle.js"></script>
+
 </body>
 </html>

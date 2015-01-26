@@ -1,14 +1,31 @@
-// http://pixelscommander.com/en/interactive-revolution/web-components-and-react-js-with-reactiveelements/
-// http://addyosmani.com/blog/component-interop-with-react-and-custom-elements/
 const React = require('react')
 const registerReact = require('./reactive-elements')
 
+let items = [
+    { name: 'Raven'},
+    { name: 'Dove'},
+    { name: 'Hawk'},
+    { name: 'Colibri'}
+  ]
+
+let style = {
+              color: 'blue',
+              background: 'yellow',
+              float: 'center'
+            }
+
 let Webcomp = React.createClass({
+  componentWillMount() {
+    //-- get user store
+    for(let prop in this.props.config.style) {
+      style[prop] = this.props.config.style[prop]
+    }
+  },
   render() {
-     return <div style={this.props.config.style}>
+    return  <div style={style}>
               <h2>{this.props._content.innerHTML}</h2>
               <ul>
-                {this.props.config.items.map(i => <li key={i.name}>{i.name}</li>)}
+                {items.map(i => <li key={i.name}>{i.name}</li>)}
               </ul>
             </div>
   }
