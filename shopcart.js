@@ -27,7 +27,7 @@ let ShopCart = React.createClass({
   render() {
     return (
       <div className="checkout">
-        <a className="checkout-button checkout-text" href="#">Cart</a>
+        <a className="checkout-button" href="#"><img className="value-img" src="images/calculator.svg"/></a>
         <div className="checkout-order">
           <div className="checkout-order-inner">
             <table className="checkout-summary">
@@ -45,8 +45,8 @@ let ShopCart = React.createClass({
                 <tr><td>Cure For Pain <span>Morphine</span></td><td>$9.90</td></tr>
               </tbody>
             </table>
-            <button className="checkout-option checkout-cancel">Continue Shopping</button>
-            <button className="checkout-option">Buy</button>
+            <button className="checkout-option checkout-cancel">Close</button>
+            <button className="checkout-option">Save</button>
           </div>
         </div>
       </div>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="calculator" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+  <path d="M5 4v24h22V4H5zM25 26H7V12h18V26zM25 10H7V6h18V10z"/>
+  <rect x="9" y="14" width="2" height="2"/>
+  <rect x="13" y="14" width="2" height="2"/>
+  <rect x="17" y="14" width="2" height="2"/>
+  <rect x="9" y="18" width="2" height="2"/>
+  <rect x="13" y="18" width="2" height="2"/>
+  <rect x="17" y="18" width="2" height="2"/>
+  <rect x="9" y="22" width="2" height="2"/>
+  <rect x="13" y="22" width="2" height="2"/>
+  <rect x="17" y="22" width="2" height="2"/>
+  <rect x="21" y="14" width="2" height="2"/>
+  <rect x="21" y="18" width="2" height="6"/>
+</svg>

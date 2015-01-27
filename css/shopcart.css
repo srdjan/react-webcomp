@@ -13,6 +13,7 @@
 
 .checkout-button {
 	position: relative;
+	padding: 1.2em 0;
 	z-index: 10;
 	display: block;
 	overflow: hidden;
@@ -27,21 +28,14 @@
 }
 
 .checkout--active .checkout-button {
-	cursor: default;
+		display: none;
+ 	cursor: default;
 	-webkit-transform: translate3d(-490%, 0, 0);
-	transform: translate3d(-490%, 0, 0);
+	transform: translate3d(-490%, 0, 0); 
 }
 
 .checkout-button:focus {
 	outline: none;
-}
-
-.checkout-text {
-	display: block;
-	padding: 1.2em 0 0;
-	color: #fff;
-	font-weight: 400;
-	font-size: 1.25em;
 }
 
 .checkout-order {
